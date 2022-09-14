@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/ejercicio4.css">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <h1>FICHA DE INSCRIPCIÓN</h1>
+    <form name="fichaInscripcion" method="post">
+        <fieldset>
+            <legend>Datos identificativos</legend>
+            <label for="codSub">Código de Suscripción:</label>
+            <input type="text" name="codSub" id="codSub" size="10" readonly value="INS-00123"><br>
+            <label for="numSocio">Nº Socio:</label>
+            <input type="text" name="numSocio" id="numSocio" size="10" disabled value="123"><br>
+            <label for="usu">Usuario:</label>
+            <input type="text" name="usu" id="usu" maxlength="10" required><br>
+            <label for="contr">Contraseña:</label>
+            <input type="text" name="contr" id="contr" maxlength="10" required><br>
+            <label for="repContr">Repite Contraseña:</label>
+            <input type="text" name="repContr" id="repContr" maxlength="10" required><br>
+            <label for="nomCompleto">Nombre Completo:</label>
+            <input type="text" name="nomCompleto" id="nomCompleto" size="30" maxlength="30" autofocus><br>
+            <label for="dni">DNI:</label>
+            <input type="text" pattern="[0-9]{8}" name="dni" id="dni" size="10" maxlength="8" title="Debe contener 8 caracteres numéricos"><br>
+            <label for="letra" >Letra:</label>
+            <input type="text" pattern="[A-Z]{1}" title="Debe contener una letra mayúscula" name="letra" id="letra" size="2" maxlength="1"><br>
+            <label for="dir" >Dirección:</label>
+            <input type="text" name="dir" id="dir" size="30" maxlength="30"><br>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" name="ciudad" id="ciudad" size="15" maxlength="15"><br>
+            <label for="codPostal">Código Postal:</label>
+            <input type="text" name="codPostal" id="codPostal" size="5" maxlength="5"><br>
+            <label for="pais">País:</label>
+            <input type="text" name="pais" id="pais" size="7" disabled value="Francia"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos Bancarios</legend>
+            <input type="radio" name="datBancarios" id="visa">
+            <label for="visa">Visa</label>
+            <input type="radio" name="datBancarios" id="masCard" checked>
+            <label for="masCard">Master Card</label>
+            <input type="radio" name="datBancarios" id="amExp">
+            <label for="amExp">American Express</label>
+        </fieldset>
+        <fieldset>
+            <legend>Aficiones</legend>
+            <input type="checkbox" name="aficiones" id="leer" checked>
+            <label for="leer">Leer</label>
+            <input type="checkbox" name="aficiones" id="viajar" checked>
+            <label for="viajar">Viajar</label>
+            <input type="checkbox" name="aficiones" id="musica" checked>
+            <label for="musicia">Escuchar Música</label>
+            <input type="checkbox" name="aficiones" id="deportes">
+            <label for="deportes">Deportes</label>
+            <input type="checkbox" name="aficiones" id="montaña">
+            <label for="montaña">Montaña</label>
+            <input type="checkbox" name="aficiones" id="juegoEstrategia" checked>
+            <label for="juegoEstrategia">Juegos de Estrategia</label>
+            <details>
+                <summary>Más opciones</summary>
+                <input type="checkbox" name="aficiones" id="informatica">
+                <label for="informatica">Informática</label>
+                <input type="checkbox" name="aficiones" id="jogging">
+                <label for="jogging">Jogging</label>
+                <input type="checkbox" name="aficiones" id="cine">
+                <label for="cine">Cine</label>
+            </details>
+        </fieldset>
+        <fieldset>
+            <legend>Enviar información</legend>
+            <details>
+                <summary>Más opciones</summary>
+                <label for="btnPdf">Adjuntar resguardo de pago (PDF):</label>
+                <input type="file" name="btnPdf" id="btnPdf">
+            </details>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </fieldset>
+    </form>
+</body>
+</html>
