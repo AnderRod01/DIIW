@@ -33,7 +33,7 @@
             <label for="ciudad">Ciudad:</label>
             <input type="text" name="ciudad" id="ciudad" size="15" maxlength="15"><br>
             <label for="codPostal">Código Postal:</label>
-            <input type="text" name="codPostal" id="codPostal" size="5" maxlength="5"><br>
+            <input type="text" pattern="[0-9]{5}" title="Debe contener 5 caracteres numéricos" name="codPostal" id="codPostal" size="5" maxlength="5"><br>
             <label for="pais">País:</label>
             <input type="text" name="pais" id="pais" size="7" disabled value="Francia"><br>
         </fieldset>
