@@ -23,11 +23,16 @@ hr {
   border-bottom: 1px solid grey;
 }
 
-.uno li{
+.uno li:first-child{
   background: lightsteelblue;
 }
 
 .dos{
+  background: lightsteelblue;
+  color: red;
+}
+
+.dos ol > li:nth-child(3){
   background: lightsteelblue;
 }
 
