@@ -28,7 +28,6 @@ hr {
 }
 
 .dos{
-  background: lightsteelblue;
   color: red;
 }
 
@@ -36,8 +35,18 @@ hr {
   background: lightsteelblue;
 }
 
-.tres {
+.dos::after { 
+  content: "Soy posterior al bloque 2";
+  color: green;
+}
+
+.tres :nth-child(odd) :not(li:last-child){
   background: lightsteelblue;
+}
+
+.tres::before{
+  content: "Soy previo al bloque 3";
+  color: blue;
 }
 
 
