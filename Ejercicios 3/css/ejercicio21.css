@@ -1,0 +1,26 @@
+div.contenedor{
+    column-count: 2;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.recuadro1{
+    margin: 50px;
+    padding: 50px 10px;
+    width: 300px;
+
+    background-color: lightgrey;
+    border-radius: 25px;
+    box-shadow: 6px 6px 12px gray;
+}
+
+.recuadro2{
+    margin: 50px;
+    padding: 50px 10px;
+    width: 300px;
+
+    background-color: olive;
+    border-radius: 25px;
+    box-shadow: -6px -6px 12px gray;
+}

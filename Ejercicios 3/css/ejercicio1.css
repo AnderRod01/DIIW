@@ -1,0 +1,15 @@
+strong {
+    color: blue;
+}
+
+span {
+    color: green;
+}
+
+em, del{
+    color: yellow;
+}
+
+p {
+    color: red;
+}

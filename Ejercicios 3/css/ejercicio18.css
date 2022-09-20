@@ -1,0 +1,35 @@
+section{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+div::first-letter{
+    font-size: 2em;
+    font-family: 'Serif';
+}
+
+h1{
+    text-shadow: -6px -6px 1px gray, 6px 6px 1px lightgray;
+}
+
+div{
+    background-color: lightgray;
+    margin: 15px;
+    padding: 20px 10px;
+    border: 20px solid transparent;
+}
+div.caja1{
+    
+    border-image: url(../imagenes/bordes.png) 20 stretch;
+}
+
+div.caja2{
+    border-image: url(../imagenes/bordes.png) 20 round;
+}
+
+div.caja3{
+    border-image: url(../imagenes/bordes.png) 20 repeat;
+}
+
