@@ -11,6 +11,12 @@
 		},
 		{
 			"path": "../../../../../../wamp64/www/DEWS"
+		},
+		{
+			"path": "../../../../../../wamp64/www/combosDependientesProvincias"
+		},
+		{
+			"path": "../../../../../../wamp64/www"
 		}
 	],
 	"settings": {
