@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../DEWC"
+		},
+		{
+			"path": "../../../../../../wamp64/www/BibliotecaDEWS"
+		},
+		{
+			"path": "../../../../../../wamp64/www/DEWS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DIIW"
+	}
+}
