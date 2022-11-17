@@ -2,21 +2,6 @@
 	"folders": [
 		{
 			"path": "../.."
-		},
-		{
-			"path": "../../../DEWC"
-		},
-		{
-			"path": "../../../../../../wamp64/www/BibliotecaDEWS"
-		},
-		{
-			"path": "../../../../../../wamp64/www/DEWS"
-		},
-		{
-			"path": "../../../../../../wamp64/www/combosDependientesProvincias"
-		},
-		{
-			"path": "../../../../../../wamp64/www"
 		}
 	],
 	"settings": {

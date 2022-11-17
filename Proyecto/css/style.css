@@ -21,8 +21,8 @@ body{
     font-size: 1.2em;
 
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
 
     /* Fondo cuadicula */
     background-color: #c1c1e5;
@@ -34,7 +34,7 @@ body{
 
 
 #degradado{
-    background-image: radial-gradient( transparent 50%, #c1c1e5);
+    background-image: linear-gradient(to top, transparent 10%, #c1c1e5);
     height: 100vh;
 }
 
@@ -44,5 +44,29 @@ header{
     grid-column: 1/2;
 }
 
+.iconoRedes{
+    width: 50px;
+}
 
+.boton{
+    width: 300px;
+}
 
+footer li{
+    text-decoration: none;
+    list-style: none;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+#contacto{
+    font-size: 1.2em;
+    text-align: center;
+    margin: 15px;
+}
