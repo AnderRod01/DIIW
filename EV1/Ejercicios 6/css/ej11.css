@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(200, 215, 228);
+}
+
+body form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+fieldset{
+    width: 35%;
+    display: grid;
+    grid-template-columns: .7fr 1.3fr;
+    gap: 10px;
+    border: 2px solid rgb(43, 43, 43);
+    border-radius: 10px;
+    background-color: rgb(228, 228, 228);
+    padding: 30px;
+}
+
+legend{
+    background-color: rgb(136, 165, 189);
+    border: 2px solid rgb(43, 43, 43);
+}
+
+fieldset label{
+    text-align: end;
+}
+
+fieldset:nth-child(3){
+    grid-template-columns: .3fr 1.7fr;
+    margin: 25px;
+    width: 30%;
+    box-shadow: 4px 4px 2px rgb(75, 75, 75);
+}
+
+fieldset:nth-child(3) label{
+    text-align: start;
+}
+
+fieldset:nth-child(3) div{
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+meter, progress{
+    border-radius: 0;
+    height: 20px;
+}
+
+
+progress::-webkit-progress-value{
+    background-color: skyblue;
+}
+
+progress::-webkit-progress-bar{
+    background-color: white;
+    border: 1px solid gray;
+}
+
+meter::-webkit-meter-suboptimum-value{
+    background-color: red;
+}
+
+meter::-webkit-meter-bar{
+    border-radius: 0;
+    height: 20px;
+}

@@ -1,0 +1,8 @@
+div{
+    background-color: pink;
+    border: 30px solid transparent;
+    border-image: url("../imagenes/loremIpsum.png") round;
+    border-image-slice: 20%;
+    white-space: pre;
+    margin: 50px;
+}

@@ -1,0 +1,22 @@
+#contenedor{
+    width: 600px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+div > div{
+    border: solid black 5px;
+    text-align: center;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+}
+
+#caja6{
+    background-color: blue;
+    justify-self: end;
+    align-self: end;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ej4.css">
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+    <h1>Formulario de alta</h1>
+    <form action="#">
+        <fieldset>
+            <h2>Nombre y apellidos <span>*</span></h2>
+            <div>
+                <input type="text" name="txtNombre" id="txtNombre">
+                <label for="txtNombre">Nombre</label>
+            </div>
+            <div>
+
+                <input type="text" name="txtApe1" id="txtApe1">
+                <label for="txtApe1">Primer apellido</label>
+            </div>
+            <div>
+                <input type="text" name="txtApe2" id="txtApe2">
+                <label for="txtApe2">Segundo apellido</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <h2>Dirección <span>*</span></h2>
+            <div class="container">
+                <div id="direccion">
+                    <input type="text" name="txtDir" id="txtDir">
+                    <label for="txtDir">Calle, número, piso, puerta</label>
+                </div>
+                <div id="codPostal-municipio">
+                    <div>
+                        <input type="text" name="txtCodPostal" id="txtCodPostal">
+                        <label for="txtCodPostal">Código postal</label>
+                    </div>
+                    <div>
+                        <input type="text" name="txtMunicipio" id="txtMunicipio">
+                        <label for="txtMunicipio">Municipio</label>
+                    </div>
+                </div>
+                <div>
+                    <select name="selProvincia" id="selProvincia">
+                        <option value="--"> -- </option>
+                    </select>
+                    <label for="selProvincia">Provincia</label>
+                </div>
+
+                <div>
+                    <select name="selPais" id="selPais">
+                        <option value="--"> -- </option>
+                    </select>
+                    <label for="selPais">Pais</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <h2>Email <span>*</span></h2>
+            <div>
+                <input type="text" name="txtEmail" id="txtEmail">
+                <label for="txtEmail">usuario@servidor.xx</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <h2>Teléfono <span>*</span></h2>
+            <div class="container">
+                <div>
+                    <input type="text" name="txtFijo" id="txtFijo">
+                    <label for="txtFijo">Fijo</label>
+                </div>
+
+                <div>
+                    <input type="text" name="txtMovil" id="txtMovil">
+                    <label for="txtMovil">Móvil</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Darme de alta →">
+        </fieldset>
+    </form>
+</body>
+
+</html>

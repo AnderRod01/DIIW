@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div{
+    border: 20px solid lightgray;
+    background-color: yellow;
+    margin: 20px;
+    padding: 25px;
+
+    background-image: url(../imagenes/casa.png);
+    background-repeat: no-repeat;
+}
+
+.recuadro1{
+    background-origin: border-box;
+}
+
+.recuadro2{
+    background-origin: padding-box;
+}
+
+.recuadro3{
+    background-origin: content-box;
+}

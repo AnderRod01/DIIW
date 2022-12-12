@@ -1,0 +1,27 @@
+main{
+    background-color:azure;
+    border: 1px solid black;
+    border-radius: 5px;
+    column-count: 1;
+    padding: 5px;
+    text-align: justify; 
+}
+p{
+    margin:0;
+    padding: 0;
+}
+@media (min-width:400px){
+    main{
+        column-count: 2;
+    }
+}
+@media (min-width:600px){
+    main{
+        column-count: 3;
+    }
+}
+@media (min-width:900px){
+    main{
+        column-count: 4;
+    }
+}

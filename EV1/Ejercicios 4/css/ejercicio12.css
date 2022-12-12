@@ -1,0 +1,96 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ol{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        border-bottom: 2px green solid;
+}
+nav li{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    margin: 0px;
+}
+
+nav img{
+    object-fit: cover;
+    width: 50px;
+}
+
+nav p{
+    background-color: green;
+    color: white;
+    width: 100px;
+    text-align: right;
+    padding: 5px 10px;
+}
+
+aside{
+    color: green;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0%;
+    float: left;
+}
+
+aside p:nth-child(even){
+    border-right: green solid 2px;
+    border-top: green solid 2px;
+    padding: 20px 0px;
+    margin: 0%;
+}
+
+aside p:nth-child(odd){
+    text-align: right;
+    padding: 20px 0px;
+    margin: 0%;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+section div{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 300px;
+    justify-content: center;
+}
+
+section:nth-child(1) div:nth-child(even){
+    border: solid green 2px;
+}
+
+section:nth-child(2) div:nth-child(odd){
+    border: solid green 2px;
+}
+section div img{
+    width: 200px;
+    object-fit: cover;
+    margin: 35px;
+}
+
+section div p:nth-child(3){
+    background-color: green;
+    padding: 15px;
+    margin: 25px;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+

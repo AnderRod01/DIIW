@@ -1,0 +1,33 @@
+div{
+    background-color: lightgray;
+}
+
+div.bordes{
+    border-top: 20px groove blue;
+    border-right: 10px solid magenta;
+    border-bottom: 2px dashed red;
+    border-left: 10px double lime;
+    background-color: lightcyan;
+}
+
+.bordes2{
+    background-color: sandybrown;
+    border-top: 20px groove blue;
+    border-right: 10px solid magenta;
+    border-bottom: 2px dashed red;
+    border-left: 10px double lime;
+}
+
+.bordes3{
+    border-top: 20px groove blue;
+    border-right: 10px solid magenta;
+    border-bottom: 2px dashed red;
+    border-left: 10px double lime;
+    background-color: pink;
+}
+
+.bordes4{
+    border: 5px dotted blue;
+    background-color: yellow;
+}
+

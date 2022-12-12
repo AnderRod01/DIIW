@@ -1,0 +1,42 @@
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.bloque{
+    border:black solid thick;
+    color: white;
+    font-weight: bold;
+}
+
+p{
+    background-color: red;
+}
+
+span{
+    background-color: blue;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+div.bloque{
+    background-color: green;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+p, div{
+    width: 25%;
+    height: 75px;
+}
+
+#normal{
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: red;
+    background-color: none;
+    margin-left: 5px;
+}

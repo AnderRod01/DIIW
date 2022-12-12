@@ -1,0 +1,31 @@
+div#contenedor{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: minmax(150px,1fr) 1fr 1fr;
+}
+
+div > div{
+    border: solid black 7px;
+    text-align: center;
+    margin: 5px;
+}
+
+#caja1{
+    grid-area: 1/1/span 1/span 3;
+    background-color: blue;
+}
+
+#caja2{
+    grid-area: 2/1/span 2/ span 1;
+    background-color: red;
+}
+
+#caja3{
+    grid-area: 2/3/span 1/span 1;
+    background-color: green;
+}
+
+#caja4{
+    grid-area: 3/2/span 1/ span 2;
+    background-color: yellow;
+}
