@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/ej5.css">
+    <title>Froggies</title>
+</head>
+<body>
+    <div class="owl-carousel owl-theme">
+        <div> <img src="img/frog1.jpg"/> </div>
+        <div> <img src="img/frog2.jpg"/> </div>
+        <div> <img src="img/frog3.jpg"/> </div>
+        <div> <img src="img/frog4.webp"/> </div>
+        <div> <img src="img/frgo5.jpg"/> </div>
+        <div> <img src="img/frog5.jpg"/> </div>
+        <div> <img src="img/frog7.jpg"/> </div>
+        <div> <img src="img/frog8.jpg"/> </div>
+        <div> <img src="img/frog9.jpg"/> </div>
+        <div> <img src="img/yeehaw.jpg"/> </div>
+    </div>        
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+        $('.owl-carousel').owlCarousel({
+        margin: 1,
+        loop: true,
+        autoplay: true,
+        nav: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        responsive: {
+            0 : {
+                items: 1
+            },
+            500 : {
+                items: 2
+            },
+            950 : {
+                items: 3
+            },
+            1500 : {
+                items: 4
+            }
+        }
+    })
+</script>
+</html>
