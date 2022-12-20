@@ -1,0 +1,23 @@
+@mixin borderRadius
+{
+    border-radius: 15px 0px;
+    color: $blanco;
+    font-style: oblique;
+}
+
+@mixin displayFlex($direccion,$alinH,$alinV)
+{
+    display: flex;
+    flex-direction: #{$direccion};
+    justify-content: #{$alinH};
+    align-items: #{$alinV};
+}
+
+@mixin format_h2
+{
+    width: 100%;
+    background-color: $gris;
+    @include borderRadius();
+    color: $blanco;
+    text-align: center;
+}

@@ -1,0 +1,104 @@
+header
+{
+    width: 100%;
+    nav
+    {
+        @include displayFlex("row","center","center");
+        padding: 0.6em;
+        color: $blanco;
+        background: $degradadoInvertido;
+        ul{
+            @include displayFlex("row", "space-evenly", "center");
+            list-style: none;
+            width: 50%;
+            flex-wrap: wrap;
+            li{
+                padding: 10px;
+            } 
+            a{
+                text-decoration: none;
+                color:$blanco;
+            }
+        }
+        ul li:hover 
+        {
+            @include borderRadius;
+            background: $degradado;
+        }
+    }
+    .logotipo
+    {
+        text-align: center;
+        width: 100%;
+        background-color: $negro;
+        img 
+        {
+            width: 500px;
+            height: 200px;
+        }
+    }
+}
+
+main 
+{
+    @include displayFlex("column","justify","center");
+    section 
+    {
+        article
+        {
+            width: 100%;            
+            div 
+            {
+                text-align: right;
+            }
+            img 
+            {
+                width: 200px;
+                position: relative;
+                top: 0;
+                left: 90%;
+            }        
+        }
+        form 
+        {
+            @include displayFlex("column","left","left");
+            input, textarea
+            {
+                @include borderRadius;
+                width: 90%;
+                margin-top: 10px;
+            }
+            textarea 
+            {
+                height: 70px;
+            }
+            input[type="submit"]
+            {
+                background-color: $negro;
+                width: fit-content;
+                margin: auto;
+            }
+        }
+    }
+    aside 
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+footer 
+{
+    @include displayFlex("row","center","center");
+    background-color: $negro;
+    color: $blanco;
+}
+
+h2 
+{
+    @include format_h2;            
+}
+p 
+{
+    text-align: justify;
+}
