@@ -1,11 +1,11 @@
-@mixin borderRadius
+@mixin formato_border_radius
 {
     border-radius: 15px 0px;
     color: $blanco;
     font-style: oblique;
 }
 
-@mixin displayFlex($direccion,$alinH,$alinV)
+@mixin display_flex($direccion,$alinH,$alinV)
 {
     display: flex;
     flex-direction: #{$direccion};
@@ -13,11 +13,17 @@
     align-items: #{$alinV};
 }
 
-@mixin format_h2
+@mixin formato_h2
 {
     width: 100%;
     background-color: $gris;
-    @include borderRadius();
+    @include borde-medio-redondo();
     color: $blanco;
     text-align: center;
+}
+
+@mixin fondo_negro
+{
+    text-align: center;
+    background-color: $negro;
 }

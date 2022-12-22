@@ -1,0 +1,129 @@
+body 
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+header
+{
+    width: 100%;
+    nav
+    {
+        background: $degradadoInvertido;
+        @include display_flex("row","center","center");    
+        width: 100%;
+        ul
+        {
+            @include display_flex("row","space-evenly","center");
+            flex-wrap: wrap;   
+            width: 80%;
+            li
+            {
+                padding: 10px;
+                list-style: none;
+                a 
+                {
+                    color: $blanco;
+                    text-decoration: none; 
+                }                
+            }
+            li:hover 
+            {
+                @include formato_border_radius();
+                background: $degradado;
+            }
+
+            @media(min-width: 600px)
+            {
+                width: 45%;
+            }
+        }
+        
+    }
+    .logotipo
+    {      
+        @include fondo_negro();  
+        width: 100%;
+        img 
+        {
+            width: 30%;
+        }
+    }
+}
+
+main 
+{
+    @include display_flex("column","justify","center");
+    padding: 15px;
+    justify-content: center;
+    section 
+    {
+        article
+        {
+            width: 100%;            
+            div 
+            {
+                text-align: right;
+            }
+            img 
+            {
+                width: 180px;
+                float: right;
+            }        
+        }
+        form 
+        {
+            @include display_flex("column","left","left");
+            border: 1px solid $negro;
+            input, textarea
+            {
+                @include formato_border_radius();
+                width: 90%;
+                margin-top: 10px;
+            }
+            textarea 
+            {
+                height: 70px;
+            }
+            input[type="submit"]
+            {
+                background-color: $negro;
+                width: fit-content;
+                margin: auto;
+            }
+        }
+    }
+    aside 
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }    
+}
+
+@media(min-width: 600px)
+{  
+    main
+    {
+        @include display_flex("row","center","flex-start");
+        aside 
+        {
+            @include display_flex("column","center","center");
+        }
+    }
+}
+
+h2 
+{
+    @include formato_h2();            
+}
+p
+{
+    text-align: justify;
+}
+
+footer 
+{
+    @include display_flex("row","center","center");
+    @include fondo_negro;
+}

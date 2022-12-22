@@ -1,0 +1,35 @@
+@mixin borde-medio-redondo
+{
+    border-radius: 15px 0px;
+    color: $blanco;
+    font-style: oblique;
+}
+
+@mixin flex($direccion,$alinH,$alinV)
+{
+    display: flex;
+    flex-direction: #{$direccion};
+    justify-content: #{$alinH};
+    align-items: #{$alinV};
+}
+
+@mixin formato-h2
+{
+    width: 100%;
+    background-color: $gris;
+    @include borde-medio-redondo();
+    color: $blanco;
+    text-align: center;
+}
+
+@mixin fondo-negro-centro()
+{
+    text-align: center;
+    background-color: $negro;
+}
+
+@mixin grid-pos($cIni,$cFin , $fIni,$fFin)   //columna i, columna f , fila i, fila f
+{
+    grid-column: $cIni/$cFin;
+    grid-row: $fIni/$fFin; 
+}
